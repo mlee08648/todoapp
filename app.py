@@ -2,6 +2,8 @@ import streamlit as st
 from datetime import datetime, date, timedelta
 from todo_logic import connect_db, init_db, add_task, get_tasks, update_task_status, delete_task
 
+st.set_page_config(page_title="My To-Do App")
+
 conn = connect_db()
 init_db(conn)
 
